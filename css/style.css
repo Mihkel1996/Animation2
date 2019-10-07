@@ -28,17 +28,35 @@ body {
     position: absolute;
 }
 
+@keyframes animateCloud {
+    0%{margin-left: -1000px;}
+    100%{margin-left: 100%;}
+}
+@keyframes animateCloud2 {
+    0%{margin-left: -1000px;}
+    100%{margin-left: 100%;}
+}
+@keyframes animateCloud3 {
+    0%{margin-left: -1000px;}
+    100%{margin-left: 100%;}
+}
 .cloud1 {
     left: 10%;
     top: 30%;
+    animation: animateCloud 10s linear infinite;
+    transform: scale(0.65);
 }
 .cloud2 {
     right: 40%;
     top: 40%;
+    animation: animateCloud 20s linear infinite;
+    transform: scale(0.3);
 }
 .cloud3 {
     right: 5%;
     top: 20%;
+    animation: animateCloud 30s linear infinite;
+    transform: scale(0.5);
 }
 
 h1 {
